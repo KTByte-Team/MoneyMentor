@@ -162,7 +162,6 @@ class BudgetTab(QWidget):   # sim1
 
         self.setLayout(layout)
 
-        # Style with rounded corners and soft background
         self.setStyleSheet("""
             QWidget {
                 background-color: #f1f1fb;
