@@ -1,0 +1,278 @@
+.eventTitle {
+    margin-bottom: 20px;
+}
+
+.eventTitleMain {
+    font-size: 34px;
+    font-weight: bold;
+    color: var(--blue1);
+
+    margin-bottom: 10px;
+
+    padding: 4px 0 4px 0;
+}
+
+.eventTitleInfo {
+    display: flex;
+    align-items: center;
+}
+
+.eventPostedAuthor {
+    font-size: 18px;
+    color: var(--textColor);
+    margin-right: 10px;
+}
+
+.eventPostedDate {
+    font-size: 18px;
+    color: var(--textColor);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.eventPostedLocation {
+    font-size: 18px;
+    color: var(--textColor);
+    margin-left: 10px;
+}
+
+.eventPosts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.eventPost {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    color: var(--textColor);
+    border-color: var(--white2);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    background-color: var(--white3);
+
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.eventPostHeader {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--blue2);
+
+    margin-bottom: 10px;
+}
+
+.eventPostContent {
+    width: 100%;
+    min-height: 125px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.eventPostInfo {
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eventPostIcon {
+    font-size: 4em;
+}
+
+.eventPostAuthor {
+    font-size: 1em;
+}
+
+.eventPostContentText {
+    font-size: 1.05em;
+
+    width: 100%;
+    min-height: 125px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+.eventContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    color: var(--textColor);
+    border-color: var(--white2);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    background-color: var(--white3);
+
+    font-size: 1.05em;
+
+    width: 100%;
+    min-height: 125px;
+}
+
+.eventContentDescription {
+    margin-bottom: 10px;
+}
+
+.eventInterested {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-button {
+    background-color: var(--white2);
+    color: var(--textColor);
+    text-align: center;
+    text-decoration: none;
+
+    width: max-content;
+
+    padding: 10px;
+
+    font-size: 0.9em;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.event-button:hover {
+    background-color: var(--white1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.eventContentLink {
+    text-decoration: none;
+    color: var(--blue1);
+    transition: color 0.2s ease;
+
+    margin-top: 17.5px;
+    margin-bottom: 20px;
+
+    font-weight: 500;
+
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+}
+
+.eventContentLink:hover {
+    color: var(--blue2);
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 20px;
+    }
+
+    .eventTitleMain {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .eventTitleInfo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eventPostedAuthor, .eventPostedDate {
+        margin-bottom: 5px;
+    }
+
+    .eventPosts {
+        gap: 8px;
+
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .eventContent {
+        font-size: 0.92em;
+        padding: 8px;
+    }
+
+    .fa-circle {
+        display: none !important;
+    }
+
+    .eventPostContent {
+        flex-direction: column;
+        min-height: 60px;
+    }
+
+    .eventPostHeader {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .eventPost {
+        padding: 8px 4px;
+        border-width: 2px;
+
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .eventPostContentText {
+        font-size: 0.98em;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .eventContentLink {
+        font-size: 0.98em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .event-button {
+        width: max-content;
+        font-size: 1em;
+        padding: 12px;
+        border-radius: 8px;
+
+        margin-left: 10px;
+    }
+
+    .eventInterested {
+        width: 100%;
+    }
+
+    .eventContent {
+        font-size: 1em;
+    }
+}
+
+.container {
+    margin-top: 0;
+}

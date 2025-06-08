@@ -1,0 +1,281 @@
+.forumTitle {
+    margin-bottom: 20px;
+}
+
+.forumTitleMain {
+    font-size: 34px;
+    font-weight: bold;
+    color: var(--blue1);
+
+    margin-bottom: 10px;
+
+    padding: 4px 0 4px 0;
+}
+
+.forumTitleInfo {
+    display: flex;
+    align-items: center;
+}
+
+.forumPostedAuthor {
+    font-size: 18px;
+    color: var(--textColor);
+    margin-right: 10px;
+}
+
+.forumPostedDate {
+    font-size: 18px;
+    color: var(--textColor);
+    margin-left: 10px;
+}
+
+.forumPosts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.forumPost {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    color: var(--textColor);
+    border-color: var(--white2);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    background-color: var(--white3);
+
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.forumPostHeader {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--blue2);
+
+    margin-bottom: 10px;
+}
+
+.forumPostContent {
+    width: 100%;
+    min-height: 125px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.forumPostInfo {
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forumPostIcon {
+    font-size: 4em;
+}
+
+.forumPostAuthor {
+    font-size: 1em;
+}
+
+.forumPostContentText {
+    font-size: 1.05em;
+
+    width: 100%;
+    min-height: 125px;
+
+    padding-left: 15px;
+    padding-top: 5px;
+
+    /*border-left: 1px solid var(--blue2);*/
+}
+
+.replyToForum {
+    margin-top: 20px;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.replyToForumHeader {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: var(--blue1);
+    margin-bottom: 10px;
+}
+
+.replyToForumTextArea {
+    padding: 10px;
+    resize: vertical;
+
+    background-color: var(--white3);
+    border: 2px solid var(--white2);
+    border-radius: 8px;
+
+    font-size: 1.1em;
+
+    transition: outline 0.2s ease, border-color 0.2s ease;
+}
+
+.replyToForumTextArea:focus {
+    outline: none;
+    border-color: var(--blue1);
+}
+
+.replyToForumButton {
+    margin-top: 15px;
+    background-color: var(--blue1);
+    color: var(--white1);
+
+    width: 10vw;
+
+    padding: 10px;
+
+    font-size: 1em;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.replyToForumButton:hover {
+    background-color: var(--blue2);
+    box-shadow: 0 0 10px black;
+}
+
+.replyErrorMessage {
+    margin-top: 10px;
+
+    color: red;
+
+    display: none;
+}
+
+.forumPostReactions {
+    font-size: 1em;
+}
+
+.reaction-icon {
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 24px;
+    }
+
+    .forumTitleMain {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .forumTitleInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .fa-circle {
+        display: none !important;
+    }
+
+    .forumPostedAuthor {
+        margin-bottom: 5px;
+    }
+
+    .forumPosts {
+        gap: 8px;
+
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .forumPostContent {
+        flex-direction: column;
+        min-height: 60px;
+    }
+
+    .forumPostHeader {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .mobileWrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .forumPostReactions {
+        margin-bottom: 10px;
+
+        font-size: 20px;
+    }
+
+    .forumPostInfo {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .forumPostIcon {
+        font-size: 2em;
+        margin-right: 10px;
+    }
+
+    .forumPost {
+        padding: 15px;
+        border-width: 2px;
+
+        margin-bottom: 10px;
+    }
+
+    .forumPostContentText {
+        font-size: 0.98em;
+        padding-left: 6px;
+        padding-right: 6px;
+        text-wrap: wrap;
+        word-wrap: break-word;
+    }
+
+    .replyToForumHeader {
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    .replyToForumButton {
+        width: 100%;
+        font-size: 1em;
+        padding: 12px 0;
+        border-radius: 8px;
+    }
+}
+
+.container {
+    margin-top: 0;
+}

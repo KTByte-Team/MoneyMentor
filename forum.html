@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title></title>
+        <meta name='description' content=''>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src="https://kit.fontawesome.com/bfbf24a258.js" crossorigin="anonymous"></script>
+
+<link rel="icon" href="images/logoimg.svg">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel='stylesheet' href='styles/style.css'>
+        <link rel='stylesheet' href='styles/navbar.css'>
+        <link rel='stylesheet' href='styles/forum.css'>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    </head>
+    <body>
+        <div class='navbar'>
+
+        </div>
+
+        <div class="container">
+            <div class="forumTitle">
+                <div class="forumTitleMain">Name of Conversation</div>
+                <div class="forumTitleInfo">
+                    <span class="forumPostedAuthor"><i class="fa-regular fa-circle-user"></i> Author</span>
+                    <i class="fa-solid fa-circle" style = "font-size: 5px;"></i>
+                    <span class="forumPostedDate"><i class="fa-regular fa-clock"></i> 12th June, 2025 at 7:21
+                        PM</span>
+                </div>
+            </div>
+            <div class="forumPosts">
+<!--                <div class="forumPost">-->
+<!--                    <div class="forumPostHeader">-->
+<!--                        <span class="forumPostDate">12th June, 2025 at 7:21 PM</span>-->
+<!--                        <br>-->
+<!--                        <span class="forumPostNumber">#1</span>-->
+<!--                    </div>-->
+<!--                    <div class="forumPostContent">-->
+<!--                        <div class="forumPostInfo">-->
+<!--                            <div class="forumPostIcon"><i class="fa-regular fa-circle-user"></i></div>-->
+<!--                            <div class="forumPostAuthor">Author</div>-->
+<!--                        </div>-->
+<!--                        <div class="forumPostContentText">-->
+<!--                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cum ducimus ea eum iure molestiae quisquam quo reprehenderit sapiente voluptates. Adipisci corporis iusto saepe sunt vel. Et incidunt pariatur sint.-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+
+            <div class="replyToForum">
+                <div class="replyToForumHeader">Reply to Post</div>
+                <textarea class="replyToForumTextArea" rows = "5" cols = "100"></textarea>
+                <span class="replyErrorMessage">Please enter at least 50 characters</span>
+                <button class="replyToForumButton">Reply</button>
+            </div>
+        </div>
+
+        <script src='scripts/init.js'></script>
+        <script src='scripts/navbar.js'></script>
+        <script src='scripts/forum.js'></script>
+        <script src='scripts/classes.js'></script>
+    </body>
+</html>

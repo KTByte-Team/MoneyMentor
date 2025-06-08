@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    background-color: whitesmoke;
+
+    --textColor: #100f0f;
+    --gray: #3c3744;
+    --blueDark: #060749;
+    --blue1: #090c9b;
+    --blue2: #3066be;
+    --blue3: #b4c5e4;
+    --white1: #fbfff1;
+    --white2: #e0e8fa;
+    --white3: #f1f1fb;
+}
+
+nav, .navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 5vh auto;
+
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+    }
+}

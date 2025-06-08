@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title></title>
+        <meta name='description' content=''>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src="https://kit.fontawesome.com/bfbf24a258.js" crossorigin="anonymous"></script>
+
+<link rel="icon" href="images/logoimg.svg">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel='stylesheet' href='styles/style.css'>
+        <link rel='stylesheet' href='styles/navbar.css'>
+        <link rel='stylesheet' href='styles/event.css'>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+        <script src="https://apis.google.com/js/platform.js"></script>
+
+        <script src="scripts/script.js"></script>
+    </head>
+    <body>
+        <div class='navbar'>
+
+        </div>
+
+        <div class="container">
+            <div class="eventTitle">
+                <div class="eventTitleMain"></div>
+                <div class="eventTitleInfo">
+                    <span class="eventPostedAuthor"><i class="fa-regular fa-circle-user"></i></span>
+                    <i class="fa-solid fa-circle" style = "font-size: 5px;"></i>
+                    <span class="eventPostedDate">
+                        <i class="fa-regular fa-clock"></i>
+                    </span>
+                    <i class="fa-solid fa-circle" style = "font-size: 5px;"></i>
+                    <span class="eventPostedLocation">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+
+                </div>
+            </div>
+            <div class="eventContent">
+                <div class="eventContentDescription"></div>
+                <a class="eventContentLink"></a>
+                <div class="eventInterested">
+                    <span class="event-interest" id = "interest">Interested: 0</span>
+                    <br>
+                    <i class="fa-solid fa-circle" style = "font-size: 5px; margin-left: 10px; margin-right: 10px;"></i>
+                    <button class="event-button eventContentInterestButton">
+                        <i class="fa-regular fa-bell event-bell-icon"></i> I'm Interested
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <script src='scripts/init.js'></script>
+        <script src='scripts/navbar.js'></script>
+        <script src='scripts/event.js'></script>
+        <script src='scripts/classes.js'></script>
+    </body>
+</html>

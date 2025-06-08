@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Login | MoneyMentor</title>
+        <meta name='description' content=''>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src="https://kit.fontawesome.com/bfbf24a258.js" crossorigin="anonymous"></script>
+
+<link rel="icon" href="images/logoimg.svg">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel='stylesheet' href='styles/style.css'>
+        <link rel='stylesheet' href='styles/login.css'>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    </head>
+    <body>
+        <div class="login-container">
+            <h2>Login</h2>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" class="loginCredentialEmail" placeholder="Email">
+                <div class="errorEmail" style="display:none;color:red;font-size:13px;margin-top:5px;"></div>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" class="loginCredentialPassword" placeholder="Password">
+                <div class="errorPassword" style="display:none;color:red;font-size:13px;margin-top:5px;"></div>
+            </div>
+            <div class="remember-forgot">
+                <div class="remember">
+                    <input type="checkbox" id="rem">
+                    <label for="rem">Remember me</label>
+                </div>
+                <a href="#" class="forgot" onclick="passwordReset()">Forgot Password?</a>
+            </div>
+            <button class="submit-btn loginButton" id="login-btn">Login</button>
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="signup.html">Register here</a></p>
+            </div>
+        </div>
+
+        <script src="scripts/script.js"></script>
+        <script src='scripts/init.js' async defer></script>
+        <script src='scripts/login.js' async defer></script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+.container {
+    padding: 20px !important;
+    width: 50vw;
+}
+
+.contactSection {
+    margin-top: 40px;
+    background-color: var(--white3);
+    padding: 20px;
+    border: 3px solid var(--white2);
+    border-radius: 12px;
+    color: var(--textColor);
+}
+
+.sectionTitle {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: var(--blue1);
+    margin-bottom: 20px;
+}
+
+.contactInfo {
+    font-size: 1.3em;
+    line-height: 1.8em;
+}
+
+.contactInfo i {
+    margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 90vw;
+
+        margin-left: 5vw;
+        margin-top: 5vw;
+    }
+
+    .sectionTitle {
+        font-size: 1.8em;
+    }
+
+    .contactInfo {
+        font-size: 1.1em;
+    }
+}

@@ -1,0 +1,130 @@
+.createEventForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+#forumTitle {
+    font-size: 1em;
+}
+
+.fieldContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    margin-bottom: 20px;
+}
+
+.labelEvent {
+    padding: 4px 0 4px 0;
+
+    font-size: 1.2em;
+    font-weight: 500;
+
+    text-align: left;
+}
+
+.createEventForm input,
+.createEventForm textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+
+    font-size: 1em;
+    color: var(--textColor);
+
+    background-color: var(--white3);
+    border: 2px solid var(--white2);
+    border-radius: 8px;
+
+    transition: outline 0.2s ease, border-color 0.2s ease;
+}
+
+.createEventForm input {
+    font-family: "Montserrat", sans-serif;
+}
+
+.createEventForm input:focus,
+.createEventForm textarea:focus {
+    outline: none;
+    border-color: var(--blue1);
+}
+
+.forumDescription {
+    resize: vertical;
+}
+
+#createEventSubmit {
+    margin-top: 25px;
+    background-color: var(--blue1);
+    color: var(--white1);
+
+    width: 10vw;
+
+    padding: 10px;
+
+    font-size: 1em;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+#createEventSubmit:hover {
+    background-color: var(--blue2);
+    box-shadow: 0 0 10px black;
+}
+
+.error {
+    display: none;
+
+    color: red;
+    margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 20px;
+    }
+
+    .createEventForm {
+        padding: 4px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .fieldContainer {
+        max-width: 99vw;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .createEventForm input,
+    .createEventForm textarea {
+        font-size: 0.97em;
+        padding: 8px;
+    }
+
+    #createEventSubmit {
+        width: 100%;
+        font-size: 1em;
+        padding: 12px 0;
+        border-radius: 8px;
+    }
+}
+
+.container {
+    margin-top: 0;
+}
